@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student work | Kids in Office</title>
+<meta name="description" content="Photos and videos of what Kids in Office students have made on real tasks in a working office.">
+<!--
+  HOW TO ADD YOUR PHOTOS AND VIDEOS
+  Save your files in the same folder as this page.
+
+  PHOTO: inside a card, replace
+      <div class="photo">...</div>
+  with
+      <img src="photo1.jpg" alt="describe the photo">
+
+  VIDEO: inside a card, replace
+      <div class="video">...</div>
+  with
+      <video controls preload="metadata" poster="video1-cover.jpg">
+        <source src="video1.mp4" type="video/mp4">
+      </video>
+  (the poster cover image is optional)
+
+  MORE ITEMS: copy a whole <article class="card">...</article> block and paste it
+  below the last one in the same section.
+
+  Search this file for "REPLACE" and fill in every title and student name.
+  Only add a child's name, photo or video with the family's written approval.
+  Never show client names, prices or documents.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#12263F; --paper:#F3F6FA; --white:#FFFFFF; --note:#FFD84D; --teal:#0E7C86; --line:#C9D5E3; --muted:#4A5D75;
+  --head:"Bricolage Grotesque","Trebuchet MS",Arial,sans-serif;
+  --body:"Source Sans 3","Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.6 var(--body)}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0}
+a{color:var(--teal)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header.top{position:sticky;top:0;z-index:5;background:var(--ink);color:var(--white)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px}
+.logo{font:800 20px var(--head);color:var(--white);text-decoration:none}
+.logo span{background:var(--note);color:var(--ink);padding:1px 8px;border-radius:4px;margin-right:6px}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:#DCE6F2;text-decoration:none;font-size:16px}
+nav a:hover{color:var(--white);text-decoration:underline}
+nav a[aria-current="page"]{color:var(--white);text-decoration:underline}
+.btn{display:inline-block;background:var(--note);color:var(--ink);font:800 17px var(--head);padding:14px 24px;border-radius:6px;text-decoration:none;border:2px solid var(--ink)}
+.btn:hover{background:#FFCB1F}
+.btn.alt{background:var(--white)}
+section{padding:60px 0}
+section h2{font-size:clamp(28px,4vw,40px);margin-bottom:14px}
+.lead{max-width:60ch;color:var(--muted);margin:0 0 28px}
+
+.page-hero{background:var(--ink);color:var(--white);padding:56px 0 60px}
+.page-hero h1{font-size:clamp(38px,6vw,60px);font-weight:800}
+.page-hero p{font-size:20px;color:#DCE6F2;max-width:52ch;margin:18px 0 0}
+.crumb{display:inline-block;margin-bottom:18px;color:#DCE6F2;font-size:16px}
+
+.grid{display:grid;gap:26px}
+.grid.videos{grid-template-columns:repeat(3,2fr)}
+.grid.trips{grid-template-columns:repeat(2,1fr)}
+section[id]{scroll-margin-top:60px}
+.trip{background:var(--white);border:2px solid var(--ink);border-radius:14px;overflow:hidden;box-shadow:5px 6px 0 var(--ink)}
+.trip .photo{border:0;border-bottom:2px dashed var(--ink);margin:0;aspect-ratio:16/9;background:var(--paper)}
+.trip img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.trip-body{padding:16px 18px 20px}
+.tag{display:inline-block;font:800 14px var(--head);padding:3px 10px;border-radius:99px;border:2px solid var(--ink);background:#FFD84D;margin-bottom:10px}
+.tag.ai{background:#8FE3C0}
+.trip h3{font-size:22px;margin-bottom:4px}
+.trip .when{color:var(--muted);font-size:16px;margin:0 0 8px}
+.trip p{margin:0;font-size:16px;line-height:1.45}
+.jump{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.grid.photos{grid-template-columns:repeat(3,1fr)}
+
+.card{background:var(--c,var(--note));border-radius:4px;padding:16px;box-shadow:3px 4px 0 rgba(18,38,63,.25)}
+.card:nth-child(3n+1){--c:#FFD84D;transform:rotate(-1deg)}
+.card:nth-child(3n+2){--c:#8CCBFF;transform:rotate(1deg)}
+.card:nth-child(3n){--c:#FF9EB5;transform:rotate(-.6deg)}
+.photo,.video{aspect-ratio:4/3;background:rgba(255,255,255,.6);border:2px dashed var(--ink);display:grid;place-items:center;text-align:center;font-size:15px;margin-bottom:12px;padding:8px}
+.video{aspect-ratio:16/9}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;margin-bottom:12px}
+.card video,.iframe{width:100%;max-width:100%;aspect-ratio:16/9;height:auto;display:block;margin-bottom:12px;background:#000;border:0}
+.card h3{font-size:20px;margin-bottom:4px}
+.card p{margin:0;font-size:16px;line-height:1.45}
+.ph{background:#fff;border-bottom:2px solid var(--ink);padding:0 3px}
+
+.alt-bg{background:var(--white);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+
+.cta{background:var(--teal);color:var(--white)}
+.cta .lead{color:#E6F6F7}
+.cta .btn{margin:0 12px 12px 0}
+footer{background:var(--ink);color:#B8C6D8;font-size:15px;padding:24px 0}
+
+@media (max-width:860px){
+  .grid.videos,.grid.photos,.grid.trips{grid-template-columns:1fr}
+  nav a.hide-sm{display:none}
+  section{padding:48px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span>Kids</span>in Office</a>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="student-work.html" aria-current="page">Student work</a>
+      <a class="hide-sm" href="index.html#faq">Questions</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="wrap">
+    <a class="crumb" href="index.html">&larr; Back to home</a>
+    <h1>Student work</h1>
+    <p>Photos and videos of what our students have made on real tasks in a working office.</p>
+    <div class="jump">
+      <a class="btn" href="#videos">Videos</a>
+      <a class="btn alt" href="#trips">Business and AI trips</a>
+      <a class="btn alt" href="#photos">Photos</a>
+    </div>
+  </div>
+</section>
+
+<section id="videos">
+  <div class="wrap">
+    <h2>Videos</h2>
+    <p class="lead">Students presenting, practising and working with the team.</p>
+    <!-- 6 video slots. Delete any card you do not need, or copy one to add more. -->
+    <div class="grid videos">
+      <article class="card">
+       <iframe src="https://www.youtube.com/embed/qy10pw8Fn2o?si=4oBc8blQIIvpduSx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Choosing the brand name</h3>
+        <p>Muhammad Luqman and Abdul Salaam made this video.</p>
+      </article>
+      <article class="card">
+        <iframe  src="https://www.youtube.com/embed/8E4ePGFwtmg?si=lZ50HcMX5vvU4NjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3><span class="ph">Chosing Website Layout</span></h3>
+        <p>Muhammad Luqman and Adbul Salaam</p>
+      </article>
+      <article class="card">
+        <iframe src="https://www.youtube.com/embed/RxrVTkfQUyQ?si=3qU2jS_TzV3hhoME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3><span class="ph">Creating website with Cluade Ai </span></h3>
+        <p>Muhammad Luqman and Adbul Salaam Using prompt formula RTCFL + check</p>
+      </article>
+      <article class="card">
+        <div class="video">Add video 4<br>(REPLACE)</div>
+        <h3><span class="ph">REPLACE: video title</span></h3>
+        <p><span class="ph">REPLACE: student name</span> made this. One line on what they learned.</p>
+      </article>
+      <article class="card">
+        <div class="video">Add video 5<br>(REPLACE)</div>
+        <h3><span class="ph">REPLACE: video title</span></h3>
+        <p><span class="ph">REPLACE: student name</span> made this. One line on what they learned.</p>
+      </article>
+      <article class="card">
+        <div class="video">Add video 6<br>(REPLACE)</div>
+        <h3><span class="ph">REPLACE: video title</span></h3>
+        <p><span class="ph">REPLACE: student name</span> made this. One line on what they learned.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="trips" class="alt-bg">
+  <div class="wrap">
+    <h2>Business and AI trips</h2>
+    <p class="lead">Students get out of the office too. They visit real companies and AI events, then bring what they saw back into their own work.</p>
+    <!--
+      Trips: replace the dashed photo box with <img src="trip1.jpg" alt="describe the photo">.
+      Change the tag to "AI trip" (add class "ai") or "Business trip".
+      Ask the company or event for permission before showing its name, and get the
+      families' written approval before showing any child.
+    -->
+    <div class="grid trips">
+      <article class="trip">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wTz-GJ-FQ_0?si=LmHKwBC5SKIQljAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="trip-body">
+          <span class="tag">Business trip</span>
+          <h3><span class="ph"> WETEX seminar in Dubai World Trade Center</span></h3>
+          <p class="when"><span class="ph">22.10.2026</span></p>
+          <p>We had productive conversations with different businesses asking them what they do.</p>
+        </div>
+      </article>
+      <article class="trip">
+        <div class="photo">Add trip photo<br>(REPLACE)</div>
+        <div class="trip-body">
+          <span class="tag ai">AI trip</span>
+          <h3><span class="ph">REPLACE: place or event visited</span></h3>
+          <p class="when"><span class="ph">REPLACE: date</span></p>
+          <p>One line on what the students saw and what they learned.</p>
+        </div>
+      </article>
+      <article class="trip">
+        <div class="photo">Add trip photo<br>(REPLACE)</div>
+        <div class="trip-body">
+          <span class="tag">Business trip</span>
+          <h3><span class="ph">REPLACE: place or company visited</span></h3>
+          <p class="when"><span class="ph">REPLACE: date</span></p>
+          <p>One line on what the students saw and what they learned.</p>
+        </div>
+      </article>
+      <article class="trip">
+        <div class="photo">Add trip photo<br>(REPLACE)</div>
+        <div class="trip-body">
+          <span class="tag ai">AI trip</span>
+          <h3><span class="ph">REPLACE: place or event visited</span></h3>
+          <p class="when"><span class="ph">REPLACE: date</span></p>
+          <p>One line on what the students saw and what they learned.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="photos">
+  <div class="wrap">
+    <h2>Photos</h2>
+    <p class="lead">Checklists, invoices, templates and sessions in the office.</p>
+    <div class="grid photos">
+      <article class="card">
+        <div class="photo">Add photo<br>(REPLACE)</div>
+        <h3><span class="ph">REPLACE: work title</span></h3>
+        <p><span class="ph">REPLACE: student name</span> made this. One line on what they learned.</p>
+      </article>
+      <article class="card">
+        <div class="photo">Add photo<br>(REPLACE)</div>
+        <h3><span class="ph">REPLACE: work title</span></h3>
+        <p><span class="ph">REPLACE: student name</span> made this. One line on what they learned.</p>
+      </article>
+      <article class="card">
+        <div class="photo">Add photo<br>(REPLACE)</div>
+        <h3><span class="ph">REPLACE: work title</span></h3>
+        <p><span class="ph">REPLACE: student name</span> made this. One line on what they learned.</p>
+      </article>
+      <article class="card">
+        <div class="photo">Add photo<br>(REPLACE)</div>
+        <h3><span class="ph">REPLACE: work title</span></h3>
+        <p><span class="ph">REPLACE: student name</span> made this. One line on what they learned.</p>
+      </article>
+      <article class="card">
+        <div class="photo">Add photo<br>(REPLACE)</div>
+        <h3><span class="ph">REPLACE: work title</span></h3>
+        <p><span class="ph">REPLACE: student name</span> made this. One line on what they learned.</p>
+      </article>
+      <article class="card">
+        <div class="photo">Add photo<br>(REPLACE)</div>
+        <h3><span class="ph">REPLACE: work title</span></h3>
+        <p><span class="ph">REPLACE: student name</span> made this. One line on what they learned.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Want your child to make something like this?</h2>
+    <p class="lead">Send a message and we will arrange a time for you and your child to see a session.</p>
+    <a class="btn" href="index.html#contact">Visit the office</a>
+    <a class="btn alt" href="index.html">Back to home</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">Kids in Office. Student names, photos and work are shown with family approval.</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kids in Office: learn business inside a real business</title>
+<meta name="description" content="A practical learning model where students study business and AI inside a working office, with real tasks and real feedback.">
+<!--
+  BEFORE PUBLISHING, search this file for "REPLACE" and fill in:
+  1. WhatsApp number (format 9715XXXXXXXX, no + or spaces)
+  2. Email address
+  3. Office location
+  4. Student names, photos and work titles in the "Student work" section
+  Photos: save them next to this file and replace each <div class="photo"> with <img src="photo1.jpg" alt="describe the photo">
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#12263F; --paper:#F3F6FA; --white:#FFFFFF; --note:#FFD84D; --teal:#0E7C86; --line:#C9D5E3; --muted:#4A5D75;
+  --head:"Bricolage Grotesque","Trebuchet MS",Arial,sans-serif;
+  --body:"Source Sans 3","Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.6 var(--body)}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0}
+a{color:var(--teal)}
+a:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header.top{position:sticky;top:0;z-index:5;background:var(--ink);color:var(--white)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px}
+.logo{font:800 20px var(--head);color:var(--white);text-decoration:none}
+.logo span{background:var(--note);color:var(--ink);padding:1px 8px;border-radius:4px;margin-right:6px}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:#DCE6F2;text-decoration:none;font-size:16px}
+nav a:hover{color:var(--white);text-decoration:underline}
+.btn{display:inline-block;background:var(--note);color:var(--ink);font:800 17px var(--head);padding:14px 24px;border-radius:6px;text-decoration:none;border:2px solid var(--ink)}
+.btn:hover{background:#FFCB1F}
+.btn.alt{background:var(--white)}
+section{padding:68px 0}
+section h2{font-size:clamp(28px,4vw,40px);margin-bottom:14px}
+.lead{max-width:60ch;color:var(--muted);margin:0 0 28px}
+
+/* hero: a visitor badge, the thing every real office hands you */
+.hero{background:var(--ink);color:var(--white);padding:64px 0 76px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(38px,6vw,64px);font-weight:800}
+.hero p{font-size:20px;color:#DCE6F2;max-width:46ch;margin:20px 0 28px}
+.badge{background:var(--white);color:var(--ink);border-radius:16px;overflow:hidden;max-width:340px;justify-self:center;width:100%;transform:rotate(2.5deg);box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.badge .strap{height:14px;background:var(--note)}
+.badge .hello{background:var(--teal);color:var(--white);text-align:center;padding:16px 10px 10px;font:800 26px var(--head)}
+.badge .hello small{display:block;font:600 15px var(--body);margin-top:2px}
+.badges{display:grid;gap:22px;justify-items:center}
+.badge.b2{transform:rotate(-2deg)}
+.badge .name{padding:24px 18px;text-align:center;font:800 32px var(--head);border-bottom:2px dashed var(--line)}
+.badge .meta{padding:14px 18px;text-align:center;color:var(--muted);font-size:16px}
+
+/* how it works: a real sequence */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:14px;counter-reset:s}
+.steps{gap:20px}
+.steps li{position:relative;background:var(--c,#FFD84D);border:0;border-radius:3px;padding:26px 16px 20px;min-height:180px;counter-increment:s;font-size:16px;line-height:1.45;box-shadow:3px 5px 0 rgba(18,38,63,.25);transition:transform .2s}
+.steps li::after{content:"";position:absolute;top:-10px;left:50%;width:58px;height:20px;transform:translateX(-50%) rotate(-2deg);background:rgba(255,255,255,.6);border:1px solid rgba(18,38,63,.12)}
+.steps li:nth-child(1){--c:#FFD84D;transform:rotate(-1.5deg)}
+.steps li:nth-child(2){--c:#FF9EB5;transform:rotate(1.2deg)}
+.steps li:nth-child(3){--c:#8FE3C0;transform:rotate(-1deg)}
+.steps li:nth-child(4){--c:#8CCBFF;transform:rotate(1.5deg)}
+.steps li:nth-child(5){--c:#FFB26B;transform:rotate(-1.2deg)}
+.steps li:hover{transform:rotate(0) scale(1.04)}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--white);border:2px solid var(--ink);font:800 16px var(--head);margin-bottom:10px}
+@media (prefers-reduced-motion:reduce){.steps li{transition:none}}
+.steps strong{display:block;font:800 18px var(--head);margin-bottom:4px}
+
+/* learning areas */
+.areas{display:grid;grid-template-columns:repeat(3,1fr);gap:26px 22px}
+.area{position:relative;background:var(--white);border:2px solid var(--ink);border-radius:14px;padding:22px 20px 20px;box-shadow:5px 6px 0 var(--c,var(--ink));transition:transform .2s,box-shadow .2s}
+.area:nth-child(1){--c:#FFD84D;--i:"\1F3E2"}
+.area:nth-child(2){--c:#FF9EB5;--i:"\1F3E0"}
+.area:nth-child(3){--c:#8FE3C0;--i:"\1F4B0"}
+.area:nth-child(4){--c:#8CCBFF;--i:"\1F4DE"}
+.area:nth-child(5){--c:#C9B8FF;--i:"\1F916"}
+.area:nth-child(6){--c:#FFB26B;--i:"\23F0"}
+.area::before{content:var(--i);display:grid;place-items:center;width:54px;height:54px;border-radius:50%;background:var(--c);border:2px solid var(--ink);font-size:26px;margin-bottom:14px}
+.area:hover{transform:translateY(-4px);box-shadow:5px 10px 0 var(--c,var(--ink))}
+.area h3{font-size:22px;margin-bottom:6px}
+.area p{margin:0;color:var(--muted)}
+.area em{display:block;margin-top:14px;padding:10px 12px;background:var(--paper);border-left:4px solid var(--c);border-radius:4px;font-style:normal;font-weight:600;color:var(--ink);font-size:15px;line-height:1.4}
+@media (prefers-reduced-motion:reduce){.area{transition:none}.area:hover{transform:none}}
+
+/* student work: sticky-note cards */
+.work{background:var(--white);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.note{background:var(--note);border-radius:4px;padding:16px;box-shadow:3px 4px 0 rgba(18,38,63,.25)}
+.note:nth-child(odd){transform:rotate(-1deg)}
+.note:nth-child(even){transform:rotate(1deg)}
+.photo{aspect-ratio:4/3;background:rgba(255,255,255,.6);border:2px dashed var(--ink);display:grid;place-items:center;text-align:center;font-size:15px;margin-bottom:12px;padding:8px}
+.note img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;margin-bottom:12px}
+.note h3{font-size:20px;margin-bottom:4px}
+.note p{margin:0;font-size:16px;line-height:1.45}
+.ph{background:#fff;border-bottom:2px solid var(--ink);padding:0 3px}
+
+/* teacher */
+.teacher{display:grid;grid-template-columns:.7fr 1.3fr;gap:40px;align-items:start}
+.teacher .photo{background:var(--white);margin:0}
+.facts{margin:16px 0 0;padding-left:20px;color:var(--muted)}
+.facts li{margin-bottom:6px}
+
+/* faq */
+details{border-top:2px solid var(--ink);padding:14px 0}
+details:last-of-type{border-bottom:2px solid var(--ink)}
+summary{cursor:pointer;font:800 20px var(--head);list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:26px;line-height:1}
+details[open] summary::after{content:"\2212"}
+details p{margin:10px 0 0;max-width:62ch;color:var(--muted)}
+
+/* contact */
+.contact{background:var(--teal);color:var(--white)}
+.contact .lead{color:#E6F6F7}
+.contact .btn{margin:0 12px 12px 0}
+.contact address{font-style:normal;margin-top:10px}
+.social{display:flex;gap:12px;margin:6px 0 14px}
+.social a{width:46px;height:46px;border-radius:50%;background:var(--white);border:2px solid var(--ink);display:grid;place-items:center;color:var(--ink)}
+.social a:hover{background:var(--note)}
+.social a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.social svg{width:24px;height:24px;display:block}
+
+footer{background:var(--ink);color:#B8C6D8;font-size:15px;padding:24px 0}
+
+@media (max-width:860px){
+  .hero .wrap,.teacher{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .areas{grid-template-columns:1fr}
+  .notes{grid-template-columns:1fr}
+  nav{display:none}
+  section{padding:52px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top"><span>Kids</span>in Office</a>
+    <nav aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="#learn">What they learn</a>
+      <a href="student-work.html">Student work</a>
+      <a href="#teacher">Your teacher</a>
+      <a href="#faq">Questions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Learn business inside a real business.</h1>
+      <p>Kids in Office is a hands-on learning model for families who want more than school can offer. Students study business and AI, then use it on real tasks in a working office.</p>
+      <a class="btn" href="#contact">Ask about joining</a>
+    </div>
+    <div class="badges" aria-hidden="true">
+      <div class="badge">
+        <div class="strap"></div>
+        <div class="hello">HELLO<small>my name is</small></div>
+        <div class="name">Luqman</div>
+        <div class="meta">Visitor today. Colleague tomorrow.</div>
+      </div>
+      <div class="badge b2">
+        <div class="strap"></div>
+        <div class="hello">HELLO<small>my name is</small></div>
+        <div class="name">Abdul Salaam</div>
+        <div class="meta">Visitor today. Colleague tomorrow.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <h2>How a session works</h2>
+    <p class="lead">Each session is 3 hours. It teaches one idea and ends with something the student made.</p>
+    <ol class="steps">
+      <li><strong>Mindset</strong>Ownership, discipline and no blame.</li>
+      <li><strong>One idea</strong>Explained in plain words.</li>
+      <li><strong>Practice</strong>A simulation or game to try it safely.</li>
+      <li><strong>Real task</strong>Work with the office team on a real job.</li>
+      <li><strong>Present</strong>Explain the work and get feedback.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="learn" style="padding-top:0">
+  <div class="wrap">
+    <h2>What students learn</h2>
+    <p class="lead">Six areas, each taught by doing.</p>
+    <div class="areas">
+      <div class="area"><h3>How a business works</h3><p>Customers, problems, products, money in and out, and who does what.</p><em>Example: map how a property is rented from first call to signed contract.</em></div>
+      <div class="area"><h3>Real estate operations</h3><p>Onboarding tenants, contracts, cheques, follow-ups and complaints.</p><em>Example: write a tenant onboarding checklist the team can use.</em></div>
+      <div class="area"><h3>Money skills</h3><p>Pricing, commission, VAT basics, invoices and simple budgets.</p><em>Example: prepare an invoice and check the totals.</em></div>
+      <div class="area"><h3>Communication and sales</h3><p>Calls, emails, WhatsApp replies, negotiating and presenting.</p><em>Example: handle a practice call with a customer.</em></div>
+      <div class="area"><h3>AI as a work tool</h3><p>Drafting, summarising, templates and helper bots. Students must understand and defend what AI gives them.</p><em>Example: build a reply template, then improve it by hand.</em></div>
+      <div class="area"><h3>Professional habits</h3><p>Being on time, finishing tasks, taking feedback and owning mistakes.</p><em>Example: run a short weekly review of their own work.</em></div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="work">
+  <div class="wrap">
+    <h2>Student work</h2>
+    <p class="lead">This is what our students have actually made.</p>
+    <p style="margin:0 0 28px"><a class="btn" href="student-work.html">See all photos and videos</a></p>
+    <div class="notes">
+      <article class="note">
+        <img src="photo 1.jpeg" alt="presenting nvoice genration in office">
+        <h3><span class="ph">Presenting in front of office</span></h3>
+        <p>Abdul Salaam and Muhammad Luqman presenting electricity and water invoice generation workflow</p>
+      </article>
+      <article class="note">
+        <img src="photos 2.jpg" alt="wetex">
+        <h3><span class="ph">Luqman in wetex seminar</span></h3>
+        <p>Muhammad Luqman attending the buisness seminar</p>
+      </article>
+      <article class="note">
+        <img src="photo 3.jpg" alt="Office">
+        <h3><span class="ph">Working in the office</span></h3>
+        <p>Working on the backend of the website using HTML</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="teacher">
+  <div class="wrap teacher">
+    <img src="photo 4.jpg" alt="Teacher" style="height: 320px;width: 320px;">
+    <div>
+      <h2>Your Teacher: Abdul Basit</h2>
+      <p class="lead" style="margin-bottom:0">Basit has taught technology, STEM and AI for more than 8 years. He designs lessons around projects, so students finish each session with a real result.</p>
+      <ul class="facts">
+        <li>Built STEM and AI curricula and managed academic programmes.</li>
+        <li>Works with Python, AI tools, robotics, Arduino and data analysis.</li>
+        <li>Judged robotics competitions, including the World Robotics Olympiad.</li>
+        <li>Led a First Lego League team to an award.</li>
+        <li>Wrote a teacher’s book on AI for Grade 11.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <h2>Questions parents ask</h2>
+    <details><summary>Who is it for?</summary><p>Students who learn well by doing, and families who want practical business and AI skills. Tell us your child’s age and grade and we will say if it fits.</p></details>
+    <details><summary>Does it replace school?</summary><p>That is your family’s decision. Some students come full time, others add it to their other learning. We can talk through the options with you.</p></details>
+    <details><summary>How do you track progress?</summary><p>Every session ends with a finished piece of work and a short review. Parents see the work and the feedback.</p></details>
+    <details><summary>Are the children’s work and photos kept private?</summary><p>We show a child’s name, photo or work on this site only with the family’s written approval. We never show client names, prices or documents.</p></details>
+    <details><summary>How do we start?</summary><p>Send us a message. We will arrange a visit to the office so you and your child can see a session.</p></details>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Visit the office</h2>
+    <p class="lead">Send a message and we will arrange a time for you and your child to see a session.</p>
+    <a class="btn" href="https://wa.me/REPLACE-WHATSAPP-NUMBER?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20Kids%20in%20Office.">Message on WhatsApp</a>
+    <a class="btn alt" href="mailto:REPLACE-EMAIL">Send an email</a>
+    <div class="social">
+      <p class="lead" style="margin-top:18px;">Follow us</p>
+  <a href="https://www.youtube.com/@KidsinOffice" target="_blank" rel="noopener" aria-label="YouTube">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+  </a>
+  <a href="https://www.instagram.com/REPLACE-INSTAGRAM" target="_blank" rel="noopener" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+  </a>
+  <a href="https://www.facebook.com/REPLACE-FACEBOOK" target="_blank" rel="noopener" aria-label="Facebook">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+  </a>
+</div>
+    <address>Office location: <span class="ph" style="color:var(--ink)">Tasrie Human Resources and Business Consultancy, City Life Al Khor,1st Floor, Ajman,UAE</span></address>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">Kids in Office. Student names, photos and work are shown with family approval.</div>
+</footer>
+
+</body>
+</html>

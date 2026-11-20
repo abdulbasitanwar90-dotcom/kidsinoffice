@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="t">
+  <title id="t">Kids in Office</title>
+  <rect width="800" height="800" fill="#FFFFFF"/>
+  <svg x="20" y="20" width="760" height="760" viewBox="0 0 400 400">
+  <defs><clipPath id="core"><circle cx="200" cy="200" r="112"/></clipPath></defs>
+  <circle cx="200" cy="200" r="196" fill="#0B2A5B"/>
+  <circle cx="200" cy="200" r="187" fill="none" stroke="#FFD84D" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+  <circle cx="200" cy="200" r="126" fill="#FFFFFF"/>
+  <circle cx="200" cy="200" r="112" fill="#2F80ED"/>
+  <text x="200" y="258" text-anchor="middle" font-family="'Bricolage Grotesque','Trebuchet MS',Arial,sans-serif" font-size="170" font-weight="800" fill="#FFFFFF">K</text>
+  <path d="M270 110 L276 127 L293 133 L276 139 L270 156 L264 139 L247 133 L264 127 Z" fill="#FFD84D"/>
+  <text x="0" y="0" transform="translate(67.25 149.59) rotate(-69.21)" text-anchor="middle" font-family="'Bricolage Grotesque','Trebuchet MS',Arial,sans-serif" font-size="42" font-weight="800" fill="#FFFFFF">K</text>
+  <text x="0" y="0" transform="translate(78.43 126.62) rotate(-58.89)" text-anchor="middle" font-family="'Bricolage Grotesque','Trebuchet MS',Arial,sans-serif" font-size="42" font-weight="800" fill="#FFFFFF">I</text>
+  <text x="0" y="0" transform="translate(94.10 105.40) rotate(-48.23)" text-anchor="middle" font-family="'Bricolage Grotesque','Trebuchet MS',Arial,sans-serif" font-size="42" font-weight="800" fill="#FFFFFF">D</text>
+  <text x="0" y="0" transform="translate(117.82 84.20) rotate(-35.36)" text-anchor="middle" font-family="'Bricolage Grotesque','Trebuchet MS',Arial,sans-serif" font-size="42" font-weight="800" fill="#FFFFFF">S</text>
+  <text x="0" y="0" transform="translate(154.67 65.43) rotate(-18.62)" text-anchor="middle" font-family="'Bricolage Grotesque','Trebuchet MS',Arial,sans-serif" font-size="42" font-weight="800" fill="#FFFFFF">I</text>
+  <text x="0" y="0" transform="translate(180.34 59.37) rotate(-7.96)" text-anchor="middle" font-family="'Bricolage Grotesque','Trebuchet MS',Arial,sans-serif" font-size="42" font-weight="800" fill="#FFFFFF">N</text>
+  <text x="0" y="0" transform="translate(232.82 61.84) rotate(13.36)" text-anchor="middle" font-family="'Bricolage Grotesque','Trebuchet MS',Arial,sans-serif" font-size="42" font-weight="800" fill="#FFFFFF">O</text>
+  <text x="0" y="0" transform="translate(263.13 72.80) rotate(26.40)" text-anchor="middle" font-family="'Bricolage Grotesque','Trebuchet MS',Arial,sans-serif" font-size="42" font-weight="800" fill="#FFFFFF">F</text>
+  <text x="0" y="0" transform="translate(287.24 87.96) rotate(37.90)" text-anchor="middle" font-family="'Bricolage Grotesque','Trebuchet MS',Arial,sans-serif" font-size="42" font-weight="800" fill="#FFFFFF">F</text>
+  <text x="0" y="0" transform="translate(304.49 103.84) rotate(47.38)" text-anchor="middle" font-family="'Bricolage Grotesque','Trebuchet MS',Arial,sans-serif" font-size="42" font-weight="800" fill="#FFFFFF">I</text>
+  <text x="0" y="0" transform="translate(319.80 123.77) rotate(57.53)" text-anchor="middle" font-family="'Bricolage Grotesque','Trebuchet MS',Arial,sans-serif" font-size="42" font-weight="800" fill="#FFFFFF">C</text>
+  <text x="0" y="0" transform="translate(333.34 151.16) rotate(69.88)" text-anchor="middle" font-family="'Bricolage Grotesque','Trebuchet MS',Arial,sans-serif" font-size="42" font-weight="800" fill="#FFFFFF">E</text>
+  <text x="0" y="0" transform="translate(37.12 255.27) rotate(71.26)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">L</text>
+  <text x="0" y="0" transform="translate(41.35 266.44) rotate(67.28)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">E</text>
+  <text x="0" y="0" transform="translate(46.89 278.36) rotate(62.90)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">A</text>
+  <text x="0" y="0" transform="translate(53.58 290.25) rotate(58.35)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">R</text>
+  <text x="0" y="0" transform="translate(61.40 301.85) rotate(53.69)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">N</text>
+  <text x="0" y="0" transform="translate(75.31 318.47) rotate(46.47)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">B</text>
+  <text x="0" y="0" transform="translate(85.22 328.10) rotate(41.86)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">U</text>
+  <text x="0" y="0" transform="translate(95.46 336.59) rotate(37.43)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">S</text>
+  <text x="0" y="0" transform="translate(103.78 342.57) rotate(34.01)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">I</text>
+  <text x="0" y="0" transform="translate(113.32 348.56) rotate(30.26)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">N</text>
+  <text x="0" y="0" transform="translate(125.22 354.89) rotate(25.77)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">E</text>
+  <text x="0" y="0" transform="translate(136.63 359.90) rotate(21.62)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">S</text>
+  <text x="0" y="0" transform="translate(148.37 364.07) rotate(17.47)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">S</text>
+  <text x="0" y="0" transform="translate(165.74 368.55) rotate(11.49)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">I</text>
+  <text x="0" y="0" transform="translate(176.85 370.44) rotate(7.73)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">N</text>
+  <text x="0" y="0" transform="translate(190.27 371.72) rotate(3.24)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">S</text>
+  <text x="0" y="0" transform="translate(200.51 372.00) rotate(-0.17)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">I</text>
+  <text x="0" y="0" transform="translate(211.77 371.60) rotate(-3.92)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">D</text>
+  <text x="0" y="0" transform="translate(225.17 370.15) rotate(-8.41)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">E</text>
+  <text x="0" y="0" transform="translate(245.55 365.86) rotate(-15.36)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">A</text>
+  <text x="0" y="0" transform="translate(265.73 358.94) rotate(-22.47)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">R</text>
+  <text x="0" y="0" transform="translate(277.52 353.54) rotate(-26.79)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">E</text>
+  <text x="0" y="0" transform="translate(289.01 347.18) rotate(-31.17)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">A</text>
+  <text x="0" y="0" transform="translate(299.57 340.25) rotate(-35.37)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">L</text>
+  <text x="0" y="0" transform="translate(315.29 327.64) rotate(-42.09)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">B</text>
+  <text x="0" y="0" transform="translate(325.16 317.98) rotate(-46.69)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">U</text>
+  <text x="0" y="0" transform="translate(333.91 307.95) rotate(-51.13)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">S</text>
+  <text x="0" y="0" transform="translate(340.10 299.78) rotate(-54.54)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">I</text>
+  <text x="0" y="0" transform="translate(346.33 290.39) rotate(-58.30)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">N</text>
+  <text x="0" y="0" transform="translate(352.96 278.66) rotate(-62.79)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">E</text>
+  <text x="0" y="0" transform="translate(358.25 267.38) rotate(-66.94)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">S</text>
+  <text x="0" y="0" transform="translate(362.71 255.75) rotate(-71.09)" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#9FD3FF">S</text>
+  <path d="M42 186 L46 196 L56 200 L46 204 L42 214 L38 204 L28 200 L38 196 Z" fill="#FFD84D"/>
+  <path d="M358 186 L362 196 L372 200 L362 204 L358 214 L354 204 L344 200 L354 196 Z" fill="#FFD84D"/>
+</svg>
+</svg>
