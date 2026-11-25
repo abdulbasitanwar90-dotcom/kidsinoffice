@@ -10,7 +10,7 @@
   1. WhatsApp number (format 9715XXXXXXXX, no + or spaces)
   2. Email address
   3. Office location
-  4. Student names, photos and work titles in the "Student work" section
+  4. Student names, photos and work titles in the "Our projects" section
   Photos: save them next to this file and replace each <div class="photo"> with <img src="photo1.jpg" alt="describe the photo">
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,7 +55,8 @@ section h2{font-size:clamp(28px,4vw,40px);margin-bottom:14px}
 .badge .hello small{display:block;font:600 15px var(--body);margin-top:2px}
 .badges{display:grid;gap:22px;justify-items:center}
 .badge.b2{transform:rotate(-2deg)}
-.badge .name{padding:24px 18px;text-align:center;font:800 32px var(--head);border-bottom:2px dashed var(--line)}
+.badge .name{padding:20px 18px;display:flex;align-items:center;justify-content:center;gap:14px;text-align:left;font:800 30px/1.1 var(--head);border-bottom:2px dashed var(--line)}
+.badge .name img{width:84px;height:84px;flex:none;border-radius:50%;object-fit:cover;border:3px solid var(--ink);background:var(--paper)}
 .badge .meta{padding:14px 18px;text-align:center;color:var(--muted);font-size:16px}
 
 /* how it works: a real sequence */
@@ -137,6 +138,11 @@ footer{background:var(--ink);color:#B8C6D8;font-size:15px;padding:24px 0}
   nav{display:none}
   section{padding:52px 0}
 }
+
+
+/* intro video section */
+.intro-frame{max-width:800px;margin:0 auto;aspect-ratio:16/9;background:#000;border:2px solid var(--ink);border-radius:14px;overflow:hidden;box-shadow:5px 6px 0 var(--ink)}
+.intro-frame iframe{width:100%;height:100%;border:0;display:block}
 </style>
 </head>
 <body>
@@ -147,7 +153,7 @@ footer{background:var(--ink);color:#B8C6D8;font-size:15px;padding:24px 0}
     <nav aria-label="Main">
       <a href="#how">How it works</a>
       <a href="#learn">What they learn</a>
-      <a href="student-work.html">Student work</a>
+      <a href="student-work.html">Our projects</a>
       <a href="#teacher">Your teacher</a>
       <a href="#faq">Questions</a>
       <a href="#contact">Contact</a>
@@ -168,22 +174,32 @@ footer{background:var(--ink);color:#B8C6D8;font-size:15px;padding:24px 0}
       <div class="badge">
         <div class="strap"></div>
         <div class="hello">HELLO<small>my name is</small></div>
-        <div class="name">Luqman</div>
+        <div class="name"><img src="luqman-badge.jpg" alt="" width="84" height="84"><span>Luqman</span></div>
         <div class="meta">Visitor today. Colleague tomorrow.</div>
       </div>
       <div class="badge b2">
         <div class="strap"></div>
         <div class="hello">HELLO<small>my name is</small></div>
-        <div class="name">Abdul Salaam</div>
+        <div class="name"><img src="abdul-salaam-badge.jpg" alt="" width="84" height="84"><span>Abdul Salaam</span></div>
         <div class="meta">Visitor today. Colleague tomorrow.</div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="how">
+<section id="intro">
   <div class="wrap">
-    <h2>How a session works</h2>
+    <h2>Watch our intro</h2>
+    <p class="lead">What we do in the office</p>
+    <div class="intro-frame">
+      <iframe src="https://www.youtube.com/embed/CcmSmFfq38k?si=FfmPdRO68wZ81Tge" title="Kids in Office intro video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="how" style="padding-top:0">
+  <div class="wrap">
+    <h2>What happens in our session</h2>
     <p class="lead">Each session is 3 hours. It teaches one idea and ends with something the student made.</p>
     <ol class="steps">
       <li><strong>Mindset</strong>Ownership, discipline and no blame.</li>
@@ -197,7 +213,7 @@ footer{background:var(--ink);color:#B8C6D8;font-size:15px;padding:24px 0}
 
 <section id="learn" style="padding-top:0">
   <div class="wrap">
-    <h2>What students learn</h2>
+    <h2>What we are learning</h2>
     <p class="lead">Six areas, each taught by doing.</p>
     <div class="areas">
       <div class="area"><h3>How a business works</h3><p>Customers, problems, products, money in and out, and who does what.</p><em>Example: map how a property is rented from first call to signed contract.</em></div>
@@ -212,8 +228,8 @@ footer{background:var(--ink);color:#B8C6D8;font-size:15px;padding:24px 0}
 
 <section id="work" class="work">
   <div class="wrap">
-    <h2>Student work</h2>
-    <p class="lead">This is what our students have actually made.</p>
+    <h2>Our projects</h2>
+    <p class="lead">These are the projects we have actually made.</p>
     <p style="margin:0 0 28px"><a class="btn" href="student-work.html">See all photos and videos</a></p>
     <div class="notes">
       <article class="note">
@@ -227,7 +243,7 @@ footer{background:var(--ink);color:#B8C6D8;font-size:15px;padding:24px 0}
         <p>Muhammad Luqman attending the buisness seminar</p>
       </article>
       <article class="note">
-        <img src="photo 3.jpeg" alt="Office">
+        <img src="photo 3.jpg" alt="Office">
         <h3><span class="ph">Working in the office</span></h3>
         <p>Working on the backend of the website using HTML</p>
       </article>
@@ -237,7 +253,7 @@ footer{background:var(--ink);color:#B8C6D8;font-size:15px;padding:24px 0}
 
 <section id="teacher">
   <div class="wrap teacher">
-    <img src="photo5.jpeg" alt="Teacher" style="height: 320px;width: 250px;">
+    <img src="photo 4.jpg" alt="Teacher" style="height: 320px;width: 320px;">
     <div>
       <h2>Your Teacher: Abdul Basit</h2>
       <p class="lead" style="margin-bottom:0">Basit has taught technology, STEM and AI for more than 8 years. He designs lessons around projects, so students finish each session with a real result.</p>
@@ -267,8 +283,8 @@ footer{background:var(--ink);color:#B8C6D8;font-size:15px;padding:24px 0}
   <div class="wrap">
     <h2>Visit the office</h2>
     <p class="lead">Send a message and we will arrange a time for you and your child to see a session.</p>
-    <a class="btn" href="https://wa.me/971582030181-WHATSAPP-NUMBER?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20Kids%20in%20Office.">Message on WhatsApp</a>
-    <a class="btn alt" href="mailto:abdulbasitanwar90@gmail.com">Send an email</a>
+    <a class="btn" href="https://wa.me/REPLACE-WHATSAPP-NUMBER?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20Kids%20in%20Office.">Message on WhatsApp</a>
+    <a class="btn alt" href="mailto:REPLACE-EMAIL">Send an email</a>
     <div class="social">
       <p class="lead" style="margin-top:18px;">Follow us</p>
   <a href="https://www.youtube.com/@KidsinOffice" target="_blank" rel="noopener" aria-label="YouTube">
@@ -290,6 +306,8 @@ footer{background:var(--ink);color:#B8C6D8;font-size:15px;padding:24px 0}
 <footer>
   <div class="wrap">Kids in Office. Student names, photos and work are shown with family approval.</div>
 </footer>
+
+
 
 </body>
 </html>
